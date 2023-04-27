@@ -50,7 +50,7 @@ class ej2Test {
 
     @org.junit.jupiter.api.Test
     void medialista0elementos() {
-        int[] lista = new int[0];
+        int[] lista = {};
         assertEquals(0,ej2.media(lista,0));
     }
     @org.junit.jupiter.api.Test
@@ -101,8 +101,8 @@ class ej2Test {
     @org.junit.jupiter.api.Test
     void pares5(){
         ArrayList lista2 = new ArrayList();
-        lista2.add(2);
         lista2.add(4);
+        lista2.add(2);
         ArrayList lista3 = new ArrayList();
 
         assertEquals(lista2,ej2.pares( lista3, 5));
